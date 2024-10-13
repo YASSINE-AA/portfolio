@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom Scrollbar for macOS-like style */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* Firefox support */
+}
+/* Global macOS-like Scrollbar Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* For Firefox */
+}
+
+/* Chrome, Safari, Edge, and Opera */
+*::-webkit-scrollbar {
+  width: 8px;  /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4); /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* Scrollbar track background */
+}
+
+/* Hover state for better interaction */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
