@@ -36,7 +36,7 @@ function LikeWhatYouSee() {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_jm3uksp', 'template_7b4knng', form.current, 'aaaRxqsex9ZQLRUfo')
+            .sendForm('', '', form.current, '')
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);
